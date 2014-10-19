@@ -17,7 +17,7 @@ if [ ! -d $BASEDIR/build ]; then
 	echo " - created build directory"
 fi
 
-# Create nw archiv of project
+# Create nw archive of project
 cd $BASEDIR/dev/
 zip -q -r ../build/main.nw *
 echo " - created zip \"main.nw\""

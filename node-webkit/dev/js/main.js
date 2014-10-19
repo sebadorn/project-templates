@@ -25,7 +25,7 @@ function init() {
 	gScene = new THREE.Scene();
 
 	gCamera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-	gCamera.position.z = 1000;
+	gCamera.position.z = 600;
 
 	var geometry = new THREE.BoxGeometry( 200, 200, 200 );
 	var material = new THREE.MeshPhongMaterial( { color: 0xF54F74 } );
@@ -42,7 +42,7 @@ function init() {
 	gScene.add( lightDir2 );
 
 	gRenderer = new THREE.WebGLRenderer( { antialias: true } );
-	gRenderer.setClearColor( 0xffffff );
+	gRenderer.setClearColor( 0xd7eef2 );
 	gRenderer.setSize( window.innerWidth, window.innerHeight );
 
 	document.body.appendChild( gRenderer.domElement );

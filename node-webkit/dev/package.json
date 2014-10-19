@@ -3,9 +3,9 @@
 	"name": "nw-demo",
 	"window": {
 		"frame": true,
-		"height": 600,
+		"height": 400,
 		"kiosk": false,
 		"toolbar": false,
-		"width": 900
+		"width": 600
 	}
 }
