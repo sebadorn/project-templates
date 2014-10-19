@@ -5,6 +5,12 @@ BASEDIR=$(dirname $0)
 
 echo " Building project \"$PROJECT\"."
 
+# Check node-webkit path
+if [ ! -d $NWDIR ]; then
+	echo " ERROR: Directory \"$NWDIR\" does not exist. Please set the correct path in the build script."
+	exit
+fi
+
 # If not already there, make a build directory
 if [ ! -d $BASEDIR/build ]; then
 	mkdir $BASEDIR/build
