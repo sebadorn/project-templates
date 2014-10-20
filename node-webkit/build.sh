@@ -48,9 +48,9 @@ if [ ! -f icudtl.dat ]; then
 	cp $NWDIR/icudtl.dat ./icudtl.dat
 fi
 
-# Combine the nw executable and the created nw archiv
+# Combine the nw executable and the created nw archive
 # into a standalone application
-# The files "nw.pak" and "icutdtl.dat" have to be in the same
+# The files "nw.pak" and "icudtl.dat" have to be in the same
 # directory as this "main" file!
 cat $NWDIR/nw main.nw > main && chmod +x main
 
